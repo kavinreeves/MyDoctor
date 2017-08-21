@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mydoctor.mydoctor.Doctor.WritePrescription">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:src="@drawable/cgd_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/app_blue"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pres_docName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:padding="8dp"
+                    android:text="Dr Richards Vivian (MD, DCH)"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/patientIdpres"
+                    android:text="Patient ID: GJK56GW"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/patNamepres"
+                    android:text="Patient Name: "
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/datePresc"
+                    android:text="Date: 4 May 2017"
+                    android:textColor="@color/colorWhite" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Symptoms:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/symptoms_docPresc"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorWhite" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/add_medicine_Btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="start"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/add_medicine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Add Medicine"
+                        android:textColor="@color/colorWhite"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pp_LL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/EditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 "
+                                android:gravity="center"
+                                android:textColor="@color/app_blue"
+                                android:visibility="gone"/>
+
+                            <EditText
+                                android:id="@+id/pres_drugName1"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Drug Name"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <EditText
+                                android:id="@+id/pres_Quantity1"
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Quantity"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:gravity="center"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                android:id="@+id/pres_dosage1"
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Dosage"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                android:id="@+id/pres_duration1"
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:hint="Days"
+                                android:gravity="center"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="4dp"
+                            android:text="Remove"
+                            android:visibility="gone"
+                            android:id="@+id/removepp_LL1"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pp_LL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/EditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 "
+                                android:visibility="gone"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Drug Name"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_drugName2"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Quantity"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_Quantity2"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Dosage"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_dosage2"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/pres_duration2"
+                                android:hint="Duration"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="4dp"
+                            android:text="Remove"
+                            android:id="@+id/removepp_LL2"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pp_LL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/EditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3 "
+                                android:visibility="gone"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Drug Name"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_drugName3"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Quantity"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_Quantity3"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Dosage"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_dosage3"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Duration"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_duration3"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="4dp"
+                            android:text="Remove"
+                            android:id="@+id/removepp_LL3"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pp_LL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/EditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4 "
+                                android:visibility="gone"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Drug Name"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_drugName4"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Quantity"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_Quantity4"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Dosage"
+                                android:id="@+id/pres_dosage4"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:hint="Duration"
+                                android:id="@+id/pres_duration4"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="4dp"
+                            android:text="Remove"
+                            android:id="@+id/removepp_LL4"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pp_LL5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/EditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5 "
+                                android:visibility="gone"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Drug Name"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_drugName5"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:hint="Quantity"
+                                android:id="@+id/pres_Quantity5"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Dosage"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_dosage5"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                            <EditText
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Duration"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:id="@+id/pres_duration5"
+                                android:textColor="@color/app_blue"
+                                android:textColorHint="@color/app_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="4dp"
+                            android:text="Remove"
+                            android:id="@+id/removepp_LL5"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff" />
+
+
+                <!--<Button
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:text="Send"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/sendPrescDoc"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/app_dark_blue"
+                    android:layout_marginBottom="18dp"/>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Preview"
+                        android:id="@+id/previewPrescDoc"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/app_dark_blue"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorWhite"
+                        android:text="Send"
+                        android:id="@+id/sendPrescDoc"
+                        android:background="@color/app_dark_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+        <include layout="@layout/include_progress_overlay"/>
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

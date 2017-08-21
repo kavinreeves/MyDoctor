@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_screen_withlogo"
+    tools:context=".Login.Login">
+
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cgd_logo" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout_social_doc"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="14dp">
+
+
+        <EditText
+            android:id="@+id/editText_UserLoginName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorWhite"
+            android:cursorVisible="true"
+            android:fontFamily="calibri"
+            android:hint="@string/hintEmailOrMobile"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/editTxt_UserLoginPassword"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorWhite"
+            android:fontFamily="calibri"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="#949494"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/userLoginButton"
+            style="@style/LoginButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTextViewAllUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:text="@string/Forgot_Password"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_social_doc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="11dp"
+        android:padding="14dp">
+
+
+        <Button
+            android:id="@+id/userSignUpButton"
+            android:layout_width="184dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/register_button"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/register_button_color" />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/include_progress_overlay"/>
+
+
+
+</RelativeLayout>

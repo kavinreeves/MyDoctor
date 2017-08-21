@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rLdocbookings"
+    tools:context="com.example.mydoctor.mydoctor.DoctorNavigation.DoctorAllBookings">
+
+    <RadioGroup android:id="@+id/toggleGroupBookingAll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        >
+
+        <ToggleButton android:id="@+id/btn_bookings_today"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/my_btn_toggle"
+            android:textOn="Today"
+            android:textColor="@color/colorWhite"
+            android:textOff="Today"
+            android:checked="true"
+            />
+        <ToggleButton android:id="@+id/btn_bookings_week"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/my_btn_toggle"
+            android:textOn="Week"
+            android:textOff="Week"
+
+            />
+        <ToggleButton android:id="@+id/btn_bookings_all"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/my_btn_toggle"
+            android:textSize="14sp"
+            android:textOn="All"
+            android:textOff="All"
+
+            />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggleGroupBookingAll"
+        android:id="@+id/recyclerView_doc_allBookings">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/include_progress_overlay"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/docAllBookings_noresult"
+            />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

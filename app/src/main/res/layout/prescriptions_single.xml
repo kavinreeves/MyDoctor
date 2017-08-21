@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/greyish"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_prescAll"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/doctor"
+                android:transitionName="@string/TransitionName"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0.5dp" />
+
+            <LinearLayout
+                android:id="@+id/LLviewUser"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name_prescriptionAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:textAlignment="center"
+                        android:textColor="@color/doc_name"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/apt_id_prescriptionAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Appointment ID: "
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_spec"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/aptType_prescriptionAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Type: "
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_name" />
+
+                <TextView
+                    android:id="@+id/date_time_prescriptionAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_name" />
+
+                <TextView
+                    android:id="@+id/date_time_prescriptionStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prescription: Generated"
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_name"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="40dp"
+android:id="@+id/add_prescription_doc"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/prescriptions_select_home" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

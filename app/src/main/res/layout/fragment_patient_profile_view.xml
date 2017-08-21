@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mydoctor.mydoctor.DoctorNavigation.PatientProfileView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_doctorProfView"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Patient Profile"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/docProfView_backButton"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:background="@color/app_blue"
+                        android:text="Back"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/patImagePatProfileView"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_main_icon"
+                    android:transitionName="@string/TransitionName" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyish"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/name_patProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="Name: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/age_patProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="Age: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sex_patProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="Sex: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/city_patProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="City: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/postcode_patProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="Postcode: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/allergies_patView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="22dp"
+                    android:gravity="start"
+                    android:text="Allergic To: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/illness_patView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="Known Illness: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/treatment_patView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp"
+                    android:maxLines="5"
+                    android:text="Treatments: "
+                    android:textColor="@color/app_dark_blue"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/include_progress_overlay" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

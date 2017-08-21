@@ -1,0 +1,152 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyish"
+    android:fillViewport="true"
+    tools:context="com.example.mydoctor.mydoctor.DoctorNavigation.DoctorWalletFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/app_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDocCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvDocWalletBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="00.00"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Available Balance"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <Button
+                    android:id="@+id/docWalletSendMoneyBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/app_green"
+                    android:text="Send money"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/docWalletHistoryBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:background="@color/app_orange"
+                    android:text="Transactions"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Complete Linking your Bank Account"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_dark_blue"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bank_transfer_icon" />
+
+                    <TextView
+                        android:id="@+id/addBankDetailsTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add Details Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_dark_blue"
+                        android:textSize="12dp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecycViewDocWalletHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/include_progress_overlay" />
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

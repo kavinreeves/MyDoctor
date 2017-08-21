@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="#ffffffff"
+    tools:context="com.example.mydoctor.mydoctor.VideoCalling.IncomingCallScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/app_blue"
+        >
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14dp"
+            android:text="Sample user"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Incoming call"
+            android:textColor="@color/app_orange"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/cgd_logo"
+        android:layout_gravity="center"
+        android:padding="50dp"
+        android:layout_weight="3"
+        android:contentDescription="Call background">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/app_blue"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/answerButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Accept"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/accept_green_button"
+             />
+        <Button
+            android:id="@+id/declineButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Decline"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+
+            android:background="@drawable/decline_red_button"
+            android:layout_toRightOf="@+id/answerButton"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_progress_overlay"/>
+</LinearLayout>

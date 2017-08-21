@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otp_verification_sign_up_step2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_background"
+    tools:context="com.example.mydoctor.mydoctor.Login.UserOtpVerifySignUpStep2">
+
+
+    <EditText
+        android:id="@+id/editTextUserOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:hint="Enter OTP"
+        style="@style/EditTextStyle"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/userOtpVerifyBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@color/com_facebook_messenger_blue"
+        android:text="VERIFY"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/userOtpResendBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/userOtpResendBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@color/colorBlack"
+        android:text="Resend"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/editTextUserOTP"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/userOtpSkipBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/com_facebook_messenger_blue"
+        android:text="Skip"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

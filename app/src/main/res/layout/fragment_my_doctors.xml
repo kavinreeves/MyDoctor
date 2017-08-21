@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mydoctor.mydoctor.Navigation.MyDoctors">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/myFavDoctorsDisplay"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/include_progress_overlay"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/myDocs_noresult"
+            />
+
+
+
+</FrameLayout>

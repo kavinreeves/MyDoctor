@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mydoctor.mydoctor.DoctorNavigation.DoctorHomepage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_select_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/delete_doctor" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Profile" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_my_patients"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/my_patients" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="My Patients" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_select_notifs"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/notification" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Notifications" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_select_appointmentss"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/bookings_icon" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Appointments" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_select_earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/earnings_doctor" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Earnings" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_chats"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/chats_select_home" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="My Chats" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_prescriptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/prescriptions_select_home" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Prescriptions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/doc_diagnostics"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/diagnostics_home_icon" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Diagnostics" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/off_white"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                    android:id="@+id/doc_select_pharmacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/off_white"
+                    android:src="@drawable/patient_pharma" />
+
+
+                <TextView
+                    style="HomePageIconsTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".25"
+                    android:text="Pharmacy" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

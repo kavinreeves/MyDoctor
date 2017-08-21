@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mydoctor.mydoctor.AdapterHelpers.ChatRoomViewOnly">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_docChatRoomViewOnly"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#2196F3"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chatViewHeaderIV"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/my_patients" />
+
+            <TextView
+                android:id="@+id/tvChatHeaderPatNameViewOnly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Name of Opponent"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvTypingStatusDocOnly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="Back"
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chatViewOnlyRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/LLViewOnlychat"
+            android:layout_below="@+id/toolbar_docChatRoomViewOnly"
+            android:padding="8dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <!--<LinearLayout
+            android:id="@+id/LLViewOnlychat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/chatViewOnlyRV"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

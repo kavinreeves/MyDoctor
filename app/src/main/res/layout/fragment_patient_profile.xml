@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mydoctor.mydoctor.Navigation.PatientProfile">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/testProfilePic"
+        android:text="@string/hello_blank_fragment" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take picture"
+        android:id="@+id/takePicTestBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload picture"
+        android:id="@+id/uploadPicTestBtn"/>
+
+</LinearLayout>

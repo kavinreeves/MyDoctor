@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_screen_withlogo">
+
+
+    <include layout="@layout/include_progress_overlay"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp"
+        android:padding="20dp"
+        android:gravity="bottom">
+
+
+
+        <EditText
+            android:id="@+id/userFirstName"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:lines="1"
+            android:background="@color/off_white"
+            android:cursorVisible="true"
+            android:fontFamily="calibri"
+            android:hint="@string/first_name"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/userLastName"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:inputType="text"
+            android:layout_weight="1"
+            android:lines="1"
+            android:maxLines="1"
+            android:fontFamily="calibri"
+            android:background="@color/off_white"
+            android:cursorVisible="true"
+            android:hint="@string/last_name"
+            android:textSize="14sp"
+            android:padding="8dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/editTextUserEmail"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="calibri"
+            android:layout_marginBottom="10dp"
+            android:background="@color/off_white"
+            android:cursorVisible="true"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:lines="1"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/editTextUserPassword"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:fontFamily="calibri"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:background="@color/off_white"
+            android:cursorVisible="true"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:hint="@string/Password"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/editTextUserCnfPassword"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:lines="1"
+            android:background="@color/off_white"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:cursorVisible="true"
+            android:hint="@string/confirm_password"
+            android:textSize="14sp"
+            android:fontFamily="calibri"
+            android:padding="8dp" />
+
+
+
+        <Button
+            android:id="@+id/userRegbtn"
+            android:layout_width="match_parent"
+            style="@style/LoginButtonStyle"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

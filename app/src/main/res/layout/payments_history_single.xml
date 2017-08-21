@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/colorAccent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/doc_profile_image"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/payment_history_cardview2"
+                android:transitionName="@string/TransitionName"
+                />
+
+            <LinearLayout
+                android:id="@+id/LLviewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/receipt_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amount: £"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/doc_name"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/receipt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trans ID: "
+                    android:layout_gravity="start"
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_spec"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_time_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/doc_name"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/description_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/doc_name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

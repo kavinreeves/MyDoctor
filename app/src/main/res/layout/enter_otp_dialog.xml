@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:text="Enter OTP"
+            android:textColor="@color/app_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userOTPPopupDialog"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="18dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/user_resendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="8dp"
+            android:text="Resend OTP?"
+            android:textColor="@color/app_dark_blue"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/cancelOtp"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="18dp"
+                android:background="@color/app_dark_blue"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/enterOtp"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"
+                android:background="@color/app_dark_blue"
+                android:text="OK"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

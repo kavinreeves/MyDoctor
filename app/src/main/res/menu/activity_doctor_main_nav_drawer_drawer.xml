@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/doc_nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/doc_nav_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/doc_nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="@string/wallet"
+            app:actionLayout= "@layout/menu_counter"/>
+            <!--app:actionViewClass="android.widget.TextView"-->
+
+        <item
+            android:id="@+id/doc_nav_chats"
+            android:icon="@drawable/chat"
+            android:title="@string/my_chats" />
+        <item
+            android:id="@+id/doc_nav_video_chats"
+            android:icon="@drawable/video_consultation"
+            app:actionViewClass="android.widget.Switch"
+            android:title="@string/video_consultation" />
+        <item
+            android:id="@+id/doc_nav_apt_requests"
+            android:icon="@drawable/pending"
+            app:actionViewClass="android.widget.TextView"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/doc_nav_appointments"
+            android:icon="@drawable/appointment"
+            android:title="@string/appointments" />
+        <item
+            android:id="@+id/doc_nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+    <item android:title="@string/help">
+        <menu>
+            <item
+                android:id="@+id/doc_nav_contact"
+                android:icon="@drawable/call_us_sidemenu"
+                android:title="Call Us" />
+            <item
+                android:id="@+id/doc_nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/mail_us" />
+        </menu>
+    </item>
+
+</menu>

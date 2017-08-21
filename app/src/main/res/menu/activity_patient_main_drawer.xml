@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/patient_home_findDoctors"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+       <item
+              android:id="@+id/patient_user_profile"
+              android:icon="@drawable/profile"
+              android:title="@string/profile"/>
+
+        <item
+            android:id="@+id/patient_wallet"
+            android:icon="@drawable/wallet"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/wallet" />
+        <item
+            android:id="@+id/patient_my_appointments"
+            android:icon="@drawable/appointment"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/appointments" />
+         <item
+             android:id="@+id/patient_my_favourites"
+             android:icon="@drawable/favorite"
+             app:actionViewClass="android.widget.TextView"
+             android:title="@string/my_doctors" />
+        <item
+            android:id="@+id/patient_my_chats"
+            android:icon="@drawable/chat"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/my_chats" />
+
+        <item
+            android:id="@+id/patient_my_prescriptions"
+            android:icon="@drawable/bookings_icon"
+            android:title="@string/prescriptions" />
+        <!--<item
+            android:id="@+id/user_maps"
+            android:icon="@drawable/maps"
+            android:title="@string/maps"
+            />-->
+        <item
+            android:id="@+id/patient_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+       <!-- <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_side_menu"
+            android:title="@string/settings" />-->
+
+
+
+    </group>
+
+    <item android:title="@string/help">
+        <menu>
+            <item
+                android:id="@+id/nav_patient_call"
+                android:icon="@drawable/call_us_sidemenu"
+                android:title="Call Us" />
+            <item
+                android:id="@+id/nav_patient_send"
+                android:icon="@drawable/ic_menu_send_redundant"
+                android:title="Send Mail" />
+        </menu>
+    </item>
+
+</menu>

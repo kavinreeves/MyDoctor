@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/confirmText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+         android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="Availability: "
+        />
+
+    <TextView
+        android:id="@+id/Timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:text="Mon-Fri : 6pm-8pm"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/weedendTimings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Sat-Sun : 10am-12am"
+            android:textStyle="bold"
+            />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:orientation="horizontal"
+       >
+
+    <Button
+        android:id="@+id/RequestAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:textColor="@drawable/orange_background"
+        android:padding="5dp"
+        android:text="Request Appointment"/>
+
+    <Button
+        android:id="@+id/Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:textColor="@drawable/orange_background"
+        android:text="Schedule Appointment"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

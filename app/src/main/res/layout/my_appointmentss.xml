@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rLmyappointments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Navigation.My_Appointments">
+
+    <RadioGroup
+        android:id="@+id/toggleGroupPatApptmnts"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btn_patApp_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:checked="true"
+            android:onClick="onToggle"
+            android:textColor="@color/colorWhite"
+            android:textOff="Today"
+            android:textOn="Today"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/btn_patApp_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:onClick="onToggle"
+            android:textColor="@color/colorWhite"
+            android:textOff="Month"
+            android:textOn="Month"
+            android:textSize="14sp"
+
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_patApp_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:onClick="onToggle"
+            android:textColor="@color/colorWhite"
+            android:textOff="All"
+            android:textOn="All"
+            android:textSize="14sp"
+
+            />
+    </RadioGroup>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_user_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggleGroupPatApptmnts">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/include_progress_overlay" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/myAppntmts_noresult"
+            />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

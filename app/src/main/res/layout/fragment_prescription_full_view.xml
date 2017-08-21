@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.mydoctor.mydoctor.Doctor.PrescriptionFullView">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top|center"
+        android:src="@drawable/cgd_logo" />
+
+   <WebView
+       android:layout_width="match_parent"
+       android:layout_marginTop="8dp"
+       android:layout_height="400dp"
+       android:id="@+id/webview_prescription">
+
+
+
+   </WebView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Cancel/Edit"
+
+        android:textColor="@color/colorWhite"
+        android:background="@color/app_dark_blue"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/colorWhite"
+        android:text="Send"
+        android:background="@color/app_dark_blue"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+
+
+    <TextView
+        android:id="@+id/TVcongrats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="Congrats! Your appointment is fixed, we will alert you 10 min prior to appointment."
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/OKbtnSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:text="OK"/>
+
+
+</RelativeLayout>

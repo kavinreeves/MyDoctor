@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/rLdocallPresc"
+    tools:context=".Navigation.My_Appointments">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView_doc_allPrescriptions">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/include_progress_overlay"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/docAllPresc_noresult"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

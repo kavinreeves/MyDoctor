@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">MyDoctor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="TransitionName">transitionNAME</string>
+
+
+    <string name="LoginUsing">Or Login Using</string>
+    <string name="logging_in">Logging In</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="signup">Signup</string>
+    <string name="available">Available</string>
+    <string name="booked">Booked</string>
+    <string name="signin">Sign In</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="hintPassword">Password</string>
+    <string name="Forgot_Password"><u>Forgot Password?</u></string>
+    <string name="txtFacebook">Facebook</string>
+    <string name="hintEmailOrMobile">Email | Mobile No</string>
+    <string name="txtGooglePlus">Google+</string>
+    <string name="txtLinkedIn">Linkedin</string>
+    <string name="Name">Name</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="facebook_app_id">1909545755941162</string>
+    <string name="fb_login_protocol_scheme">fb1657283824565083</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="doctor_spec_prompt">Choose a Specialization</string>
+
+    <string-array name="doctor_specs_array">
+        <item>General Physician</item>
+        <item>Pediatrician</item>
+        <item>Gynecologist</item>
+        <item>Ophthalmologist</item>
+        <item>Dermatologist</item>
+        <item>ENT doctor</item>
+        <item>Orthopedic</item>
+        <item>Cardiologist</item>
+        <item>Neurologist</item>
+        <item>Dentist</item>
+        <item>Urologist</item>
+        <item>Psychiatrist</item>
+        <item>Pathologist</item>
+        <item>Radiologist</item>
+        <item>Anesthesiologist</item>
+        <item>Oncologist</item>
+        <item>Nephrologist</item>
+        <item>Endocrinologist</item>
+        <item>Gastrologist</item>
+        <item>Veterinary</item>
+
+    </string-array>
+    <string name="title_activity_doctor_main_nav_drawer">DoctorMainNavDrawer</string>
+    <string name="title_activity_patient_main">PatientMainActivity</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="wallet">Wallet</string>
+    <string name="appointments">Appointments</string>
+    <string name="my_doctors">My Doctors</string>
+    <string name="my_chats">My Chats</string>
+    <string name="video_consultation">Video Consultation</string>
+    <string name="prescriptions">Prescriptions</string>
+    <string name="maps">Maps</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="welcome_space">Welcome </string>
+    <string name="help">Help</string>
+    <string name="support">Support</string>
+    <string name="contact_us">Contact us</string>
+    <string name="welcome">Welcome</string>
+    <string name="chat_requests">Chat Requests</string>
+    <string name="mail_us">Mail Us</string>
+    <string name="time_date">time/date</string>
+    <string name="status">status</string>
+    <string name="get_available_timings">Get Available Timings</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="description">Description:</string>
+    <string name="time">Time:</string>
+    <string name="amount">Amount:</string>
+    <string name="balance">Balance:</string>
+    <string name="ref_id">Ref ID:</string>
+    <string name="status_wallet">Status:</string>
+    <string name="doctor_profile">Doctor Profile</string>
+    <string name="video_call">Video Call</string>
+    <string name="chat_now">Chat Now</string>
+    <string name="appointment">Appointment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="e_mail">E-mail</string>
+    <string name="facebook">Facebook</string>
+    <string name="professional_details">Professional Details</string>
+    <string name="experience_in_years">Experience in Years</string>
+    <string name="specialization">Specialization</string>
+    <string name="qualification">Qualification</string>
+    <string name="doctor_reg_id">Doctor Reg Id</string>
+    <string name="consulting_hours">Consulting Hours</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="consultation_fee">Consultation Fee</string>
+    <string name="face_face">Face-Face</string>
+    <string name="chat">Chat</string>
+    <string name="video">Video</string>
+    <string name="login_as">Login As</string>
+    <string name="before_noon">Before Noon</string>
+    <string name="evening">Evening</string>
+    <string name="morning">Morning</string>
+
+    <string name="concat_specialization">Specialization: , %1$s.</string>
+    <string name="concat_exp">Experience: , %1$s.</string>
+    <string name="concat_video">Video Call: , %1$s.</string>
+    <string name="concat_city">City: , %1$s.</string>
+    <string name="concat_textchat">Text Chat: , %1$s.</string>
+    <string name="concat_direct">Face-Face: , %1$s.</string>
+
+
+</resources>

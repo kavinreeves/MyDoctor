@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rLpatientchats"
+    tools:context="com.example.mydoctor.mydoctor.Navigation.PatientChatsFragment">
+
+
+    <RadioGroup android:id="@+id/toggleGroupPatient"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        >
+
+        <ToggleButton android:id="@+id/btn_patchat_thisweek"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/my_btn_toggle"
+            android:textOn="Week"
+            android:textOff="Week"
+            android:checked="true"
+            android:onClick="onToggle"
+            />
+        <ToggleButton android:id="@+id/btn_patchat_thisMonth"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/my_btn_toggle"
+            android:textOn="Month"
+            android:textOff="Month"
+            android:onClick="onToggle"
+
+            />
+        <ToggleButton android:id="@+id/btn_patchat_all"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:textSize="14sp"
+            android:textOn="All"
+            android:textOff="All"
+            android:onClick="onToggle"
+
+            />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggleGroupPatient"
+        android:id="@+id/chatHistoryPat_recyclerView">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/include_progress_overlay"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/patChats_noresult"
+            />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

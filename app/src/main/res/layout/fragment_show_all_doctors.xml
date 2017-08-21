@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rLshowallDocs"
+    android:background="@color/colorWhite"
+
+    tools:context="com.example.mydoctor.mydoctor.Navigation.ShowAllDoctors">
+
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Find Doctors"
+        android:background="@color/greyish"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/searchViewFindDoctors">
+
+
+    </android.support.v7.widget.SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="@color/greyish"
+        android:layout_below="@+id/searchViewFindDoctors"
+        android:id="@+id/recyclerViewFindDoctors"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <include layout="@layout/include_progress_overlay"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/showAllDocs_noresult"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>

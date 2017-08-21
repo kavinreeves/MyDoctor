@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:text="Enter your Account Details:"
+            android:textColor="@color/app_dark_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/accHolderName"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:hint="Account Holder Name"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/accBankName"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:hint="Bank Name"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/enterSortCode"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:hint="Sort Code"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/enterAccNumber"
+            style="EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:hint="Account Number"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/login_input_text"
+            android:textColorHint="@color/login_input_text"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/addAccDetailsBtn"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            android:background="@color/app_dark_blue"
+            android:text="Add "
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

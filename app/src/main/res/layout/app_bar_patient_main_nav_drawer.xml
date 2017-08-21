@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mydoctor.mydoctor.Patient.PatientMainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_patient"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00bcff"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.64"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:background="@drawable/doctor_login"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvHeader_PatName"
+                    android:text=""
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="2"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:text=""
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:id="@+id/tvHeaderPat_balance"
+                    />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.75"
+                    android:visibility="gone"
+                    android:background="@drawable/logout"
+                    android:id="@+id/endChatDocChatRoom"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvChatHeaderPatName"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:id="@+id/tvTypingStatusDoc"
+                    />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/logout"
+                    android:id="@+id/endChatDocChatRoom"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>-->
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/patient_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_icon_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="bottom"
+        android:background="#00bcff"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/patient_fragment_container"
+        app:layout_anchorGravity="bottom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="70dp"
+            android:orientation="vertical"
+           >
+
+        <ImageButton
+
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:id="@+id/imageButton_home_bottom"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/home_bottom_nav" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageButton_appointment_bottom"
+            android:layout_weight="1"
+            android:background="@drawable/appointment_bottom_nav" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Book Now"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_marginLeft="4dp"
+
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageButton_wallet_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/wallet_bottom_nav" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:text="Wallet"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_marginLeft="4dp"
+
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageButton_support_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/support_bottom_nav1" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="Support"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<include layout="@layout/content_patient_main" />-->
+
+    <!-- <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</LinearLayout>

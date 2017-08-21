@@ -1,0 +1,599 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mydoctor.mydoctor.Navigation.My_Profile">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/patient_cover">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_viewProfile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:transitionName="@string/TransitionName" />
+
+            <ImageButton
+                android:id="@+id/user_profilePic_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/user_viewProfile_imageView"
+                android:layout_alignRight="@+id/user_viewProfile_imageView"
+                android:layout_alignTop="@+id/user_viewProfile_imageView"
+                android:background="@drawable/camera_take_photo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvDocEditProfilePersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textColor="@color/app_dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDocEditProfilePersonal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="First Name"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_fName_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Last Name"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_lName_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Age"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_age_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:maxLength="2"
+                        android:enabled="false"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gender"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_gender_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Phone Number"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_phone_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/user_edit_perPhoneBtn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/edit_form_profileview" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/user_edit_perInfoBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edit_form_profileview" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvDocEditProfileProfessional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textColor="@color/app_dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDocEditProfileProfessional"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/doc_workplace_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/doc_spec_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/user_edit_othersInfoBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edit_form_profileview" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvUserEditHealthInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health Information"
+                android:textColor="@color/app_dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUserEditHealthInfo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Allergic To"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_allergy_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="2"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:text="Treatments?"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/user_treatment_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:maxLines="2"
+                        android:lines="1"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Known Illness"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_illness_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="2"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blood Group"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_description_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/user_edit_healthInfoBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edit_form_profileview" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvDocEditWorkAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textColor="@color/app_dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDocEditWorkAddress"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Address Line1"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_line1_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Address Line2"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_line2_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="City / Town"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_city_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Postcode"
+                        android:textColor="@color/app_blue"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/user_postcode_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:enabled="false"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/user_edit_contactInfoBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edit_form_profileview" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="18dp"
+            android:background="@color/app_dark_blue"
+            android:text="Save Changes"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/user_edit_profileSaveAllBtn"/>
+
+
+
+    </LinearLayout>
+
+            <include layout="@layout/include_progress_overlay"/>
+    </FrameLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

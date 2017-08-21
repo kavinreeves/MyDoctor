@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.mydoctor.mydoctor.Doctor.DoctorChatRoom">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_docChatRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvChatHeaderPatName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvTypingStatusDoc"
+                android:layout_width="0dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:id="@+id/endChatDocChatRoom"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/logout" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_docChatRoom"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_doctorChatRoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyish"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextDocChatRoom"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="Enter Message"
+                android:inputType="textEmailAddress"
+                android:lines="2" />
+
+            <ImageButton
+                android:id="@+id/buttonSendDocChatRoom"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".25"
+                android:background="@drawable/chat_send_btn"
+                android:text="Send" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

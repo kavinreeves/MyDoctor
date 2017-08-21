@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/colorAccent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<ImageView
+            android:id="@+id/imageViewOnlineStatus"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/doc_online" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doc_profile_imageFavDoc"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/doctor"
+                android:transitionName="@string/TransitionName"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0.5dp" />
+
+            <LinearLayout
+                android:id="@+id/LLviewUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="textView1"
+                    android:layout_gravity="start"
+                    android:textAlignment="center"
+                    android:textColor="@color/doc_name"
+                    android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="textView2"
+                    android:textAlignment="center"
+                    android:layout_gravity="start"
+                    android:textColor="@color/doc_spec"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="textView2"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewOnlineStatus"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/doc_online" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

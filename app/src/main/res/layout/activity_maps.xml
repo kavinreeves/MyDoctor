@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mydoctor.mydoctor.MapsActivity" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnHospital"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Hospital"
+            android:src="@drawable/hospitals"/>
+        <ImageButton
+            android:id="@+id/btnPharmacy"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Pharmacy"
+            android:src="@drawable/pharmacies"/>
+        <ImageButton
+            android:id="@+id/btnDoctor"
+            android:layout_weight="1"
+            android:src="@drawable/doctors"
+            android:layout_width="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="40dp"
+            android:text="Doctor" />
+        <ImageButton
+            android:id="@+id/btnDentist"
+            android:layout_weight="1"
+            android:src="@drawable/dentists"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Dentist" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

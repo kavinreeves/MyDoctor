@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyish"
+    android:fillViewport="true"
+    tools:context="com.example.mydoctor.mydoctor.Navigation.MyWallet">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/app_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pat_currencyTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvUserWalletBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Available Balance"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+
+                <Button
+                    android:id="@+id/userWalletAddMoneyBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_money_wallet"
+                    android:text="         Add money"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/userWalletHistoryBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/trans_history_wallet"
+                    android:text="                Transactions"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listViewUserWalletHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/include_progress_overlay" />
+
+    </FrameLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
